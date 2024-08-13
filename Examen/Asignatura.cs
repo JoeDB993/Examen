@@ -35,6 +35,8 @@ namespace Examen
         public void Imprimir()
         {
             double notaFinal = CalcularNotaFinal();
+            Console.WriteLine("");
+            Console.WriteLine("**********************************************");
             Console.WriteLine($"Nombre del Alumno: {NombreAlumno}");
             Console.WriteLine($"Número de Cuenta: {NumeroCuenta}");
             Console.WriteLine($"Email: {Email}");
@@ -46,6 +48,7 @@ namespace Examen
             
             double notaFinalConParametros = CalcularNotaFinal(N1, N2, N3);
             Console.WriteLine($"Nota Final con parámetros: {notaFinalConParametros} - {MensajeNotaFinal(notaFinalConParametros)}");
+            Console.WriteLine("**********************************************");
         }
     }
 
